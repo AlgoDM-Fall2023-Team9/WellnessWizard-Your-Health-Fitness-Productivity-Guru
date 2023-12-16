@@ -20,7 +20,7 @@ The script efficiently gathers comprehensive data on mobile applications, facili
 
 The function creates an S3 client using the boto3 library, specifying AWS access key ID and secret access key for authentication. The access key ID and secret access key provided are usually kept secure. This can be particularly useful for archiving, data backup, or facilitating collaborative data analysis workflows.
 
-Model Development
+**Model Development**
 
 1. Framework - Langchain:
  Langchain serves as the overarching framework for the chatbot development process. It provides the structure and tools necessary to seamlessly integrate various components of the chatbot, including language models, data processing agents, and user interfaces. Langchain likely offers a set of functionalities that streamline the development workflow, making it easier for developers to work with natural language processing tasks.
