@@ -14,7 +14,7 @@ load_dotenv(find_dotenv())
 
 
 def read_from_s3(file_name):
-    s3 = boto3.client('s3')
+    s3 = boto3.client('s3',aws_access_key_id="AKIATIOAOM2VOUMBPVVI",aws_secret_access_key="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")
     obj = s3.get_object(Bucket='adm-project-bucket', Key= file_name)
     df = pd.read_csv(io.BytesIO(obj['Body'].read()))
     return df
