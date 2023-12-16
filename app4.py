@@ -133,21 +133,21 @@ def app_visualizations(df_name, mean_df):
 st.title('WellnessWizard-Your-Health-Fitness-Productivity-Guru')
 
 def select_category():
-    return st.sidebar.selectbox('Select an app category', ('Productivity :memo:', 'Fitness', 'Health'))
+    return st.sidebar.selectbox('Select an app category', ('Productivity 📝', 'Fitness 🏋️', 'Health 🏥'))
 
 selected_category = select_category()
 
-if selected_category == 'Productivity :memo:':
+if selected_category == 'Productivity 📝':
     app_questions(app_infos_df)
     review_summarization(reviews_df)
     app_visualizations(app_infos_df, mean_productivity)
 
-elif selected_category == 'Fitness':
+elif selected_category == 'Fitness 🏋️':
     app_questions(fitness_app_infos_df)
     review_summarization(fitness_app_reviews_df)
     app_visualizations(fitness_app_infos_df, mean_fitness)
 
-elif selected_category == 'Health':
+elif selected_category == 'Health 🏥':
     app_questions(health_app_infos_df)
     review_summarization(health_app_reviews_df)
     app_visualizations(health_app_infos_df, mean_health)
