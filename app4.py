@@ -30,10 +30,10 @@ fitness_app_reviews_df = read_from_s3('fitness_app_reviews_df.csv')
 health_app_reviews_df = read_from_s3('health_app_reviews_df.csv')
 
 def app_questions(df_name):
-    st.title('Questions Related to Apps')
+    st.title('Questions Related to Apps 🙋')
     option = st.selectbox('Select an option', ('Ask a question about apps',))
 
-    if option == 'Ask a question about apps 🙋':
+    if option == 'Ask a question about apps':
         question = st.text_input('Enter your question here:')
         if st.button('Get Answer'):
             chat = ChatOpenAI(api_key=OPENAI_API_KEY, model_name="gpt-4", temperature=0.0)
