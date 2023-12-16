@@ -130,7 +130,7 @@ def app_visualizations(df_name, mean_df):
         ax.set_title('Mean In-App Prices of Apps')
         st.pyplot(fig)
 
-st.title('WellnessWizard-Your-Health-Fitness-Productivity-Guru')
+st.title('WellnessWizard-Your-Health-Fitness-Productivity-Guru 🎯')
 
 def select_category():
     return st.sidebar.selectbox('Select an app category', ('Productivity 📝', 'Fitness 🏋️', 'Health 🏥'))
