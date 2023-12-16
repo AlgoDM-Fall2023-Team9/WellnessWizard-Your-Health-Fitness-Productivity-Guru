@@ -33,7 +33,7 @@ def app_questions(df_name):
     st.title('Questions Related to Apps')
     option = st.selectbox('Select an option', ('Ask a question about apps',))
 
-    if option == 'Ask a question about apps':
+    if option == 'Ask a question about apps 🙋':
         question = st.text_input('Enter your question here:')
         if st.button('Get Answer'):
             chat = ChatOpenAI(api_key=OPENAI_API_KEY, model_name="gpt-4", temperature=0.0)
@@ -42,8 +42,8 @@ def app_questions(df_name):
             st.write(f"Answer: {response}")
 
 def review_summarization(df_name):
-    st.title('Reviews Summarization')
-    option = st.selectbox('Select an option', ('Get reviews summary',))
+    st.title('Reviews Summarization 📖')
+    option = st.selectbox('Select an option', ('Get reviews summary ',))
 
     if option == 'Get reviews summary':
         question = st.text_input('Enter your review summary query here:')
@@ -87,7 +87,7 @@ mean_fitness = convert(fitness_app_infos_df)
 mean_health = convert(health_app_infos_df)
 
 def app_visualizations(df_name, mean_df):
-    st.title('Visualizations')
+    st.title('Visualizations 📊')
     option = st.selectbox('Select an option', ('Get top 5 apps by ratings',
                                               'Get bottom 3 apps by ratings',
                                               'Get 5 apps with the most number of installs',
