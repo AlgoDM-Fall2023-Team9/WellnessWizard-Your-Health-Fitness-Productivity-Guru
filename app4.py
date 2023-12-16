@@ -88,8 +88,8 @@ mean_health = convert(health_app_infos_df)
 
 def app_visualizations(df_name, mean_df):
     st.title('Visualizations')
-    option = st.selectbox('Select an option', ('Get top 5 apps by ratings histogram',
-                                              'Get bottom 3 apps by ratings histogram',
+    option = st.selectbox('Select an option', ('Get top 5 apps by ratings',
+                                              'Get bottom 3 apps by ratings',
                                               'Get 5 apps with the most number of installs',
                                               'Visualize mean in-app prices of all apps'))
 
