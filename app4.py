@@ -137,7 +137,7 @@ def select_category():
 
 selected_category = select_category()
 
-if selected_category == 'Productivity "📈" ':
+if selected_category == 'Productivity :memo:':
     app_questions(app_infos_df)
     review_summarization(reviews_df)
     app_visualizations(app_infos_df, mean_productivity)
