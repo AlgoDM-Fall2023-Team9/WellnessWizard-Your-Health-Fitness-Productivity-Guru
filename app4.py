@@ -133,7 +133,7 @@ def app_visualizations(df_name, mean_df):
 st.title('WellnessWizard-Your-Health-Fitness-Productivity-Guru')
 
 def select_category():
-    return st.sidebar.selectbox('Select an app category', ('Productivity', 'Fitness', 'Health'))
+    return st.sidebar.selectbox('Select an app category', ('Productivity :memo:', 'Fitness', 'Health'))
 
 selected_category = select_category()
 
