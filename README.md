@@ -1,1 +1,1 @@
-# AppFit-Advisor
+# WellnessWizard-Your-Health-Fitness-Productivity-Guru
