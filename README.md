@@ -37,3 +37,4 @@ GPT4, or the fourth iteration of the Generative Pre-trained Transformer model, s
 In summary, the Langchain framework orchestrates the integration of components, ChatOpenAI handles user interactions, the pandas_dataframe_agent manages data processing, and GPT4 serves as the powerful language model. Together, these elements create a sophisticated and efficient chatbot capable of understanding, processing, and responding to user inputs in a natural and context-aware manner.
 
 
+Codelab Link: https://codelabs-preview.appspot.com/?file_id=11wP6_UTPNx8adUSvqu2HfzSj3Jyls0qRqGa70TaNgDM#0
