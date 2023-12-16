@@ -43,7 +43,7 @@ def app_questions(df_name):
 
 def review_summarization(df_name):
     st.title('Reviews Summarization 📖')
-    option = st.selectbox('Select an option', ('Get reviews summary ',))
+    option = st.selectbox('Select an option', ('Get reviews summary',))
 
     if option == 'Get reviews summary':
         question = st.text_input('Enter your review summary query here:')
