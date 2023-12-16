@@ -10,8 +10,9 @@ from langchain_experimental.agents import create_pandas_dataframe_agent
 from dotenv import load_dotenv, find_dotenv
 #from scrape import app_infos_df, reviews_df
 
-load_dotenv(find_dotenv())
+#load_dotenv(find_dotenv())
 
+OPENAI_API_KEY = "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"
 
 def read_from_s3(file_name):
     s3 = boto3.client('s3',aws_access_key_id="AKIATIOAOM2VOUMBPVVI",aws_secret_access_key="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")
@@ -35,7 +36,7 @@ def app_questions(df_name):
     if option == 'Ask a question about apps':
         question = st.text_input('Enter your question here:')
         if st.button('Get Answer'):
-            chat = ChatOpenAI(model_name="gpt-4", temperature=0.0)
+            chat = ChatOpenAI(api_key=OPENAI_API_KEY, model_name="gpt-4", temperature=0.0)
             agent = create_pandas_dataframe_agent(chat, df_name, verbose=True)
             response = agent.run(question)
             st.write(f"Answer: {response}")
@@ -47,7 +48,7 @@ def review_summarization(df_name):
     if option == 'Get reviews summary':
         question = st.text_input('Enter your review summary query here:')
         if st.button('Get Summary'):
-            chat = ChatOpenAI(model_name="gpt-4", temperature=0.4)
+            chat = ChatOpenAI(api_key=OPENAI_API_KEY, model_name="gpt-4", temperature=0.4)
             agent_reviews = create_pandas_dataframe_agent(chat, df_name, verbose=False)
             response = agent_reviews.run(question)
             st.write(f"Summary: {response}")
